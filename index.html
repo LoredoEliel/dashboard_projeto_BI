@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Criminalidade - SP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #0058a3; /* Azul destacado */
+            color: white;
+            width: 100%;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        main {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 75vh;
+            border: none;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #0058a3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Criminalidade - SP</h1>
+    </header>
+
+    <main>
+        <iframe 
+            title="Criminalidade - SP"
+            src="https://app.powerbi.com/reportEmbed?reportId=30522be1-d904-475b-9e84-7383a637a883&autoAuth=true&ctid=a718d7e1-36c4-4d94-b2ee-e1bad0ae8eed"
+            allowFullScreen="true">
+        </iframe>
+    </main>
+
+    <footer>
+        <p>Desenvolvido com <a href="https://powerbi.microsoft.com/" target="_blank">Power BI</a> | Relatório público para visualização.</p>
+    </footer>
+</body>
+</html>
+
